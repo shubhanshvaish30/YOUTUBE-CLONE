@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    columns: #5a5a5a;
+}
+img{
+    cursor:pointer;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    padding: 10px 1.5%;
+    justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 50%;
+    justify-content: center;
+}
+.icon:hover{
+    background-color: #cccecc;
+    cursor: pointer;
+}
+.left icon{
+    font-size: 22px;
+    margin-right: 25px;
+}
+.left img{
+    height: 20px;
+    width: 84px;
+}
+.right icon{
+    font-size: 22px;
+    margin-right: 25px;
+}
+.right img{
+    width: 39px;
+    border-radius: 50px;
+    margin-right: 0px;
+}
+.mic{
+    width: 35px;
+    height: 35px;
+    background-color: #edeeed;
+    border-radius: 50%;
+    justify-content: center;
+    margin-left: 15px;
+}
+.left div{
+    margin-right: 15px;
+}
+.right div{
+    margin-right: 15px;
+}
+.middle icon{
+    font-size: 22px;
+}
+.searchbox{
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    height: 40px;
+    border-radius: 25px;
+}
+.middle input{
+    font-size: 17px;
+    padding-left: 5px;
+    width: 470px;
+    height: 20px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+/* Sidebar */
+.sidebar{
+    background: #fff;
+    width: 210px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 10px;
+    padding-top: 70px;
+}
+.upper hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mid hr{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.lower{
+    margin-top: 10px;
+}
+.home{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    padding-left: 10px;
+    padding-right: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.home:hover{
+    background-color: #ededed;
+}
+.home a{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: fit-content;
+    color: black;
+    font-size: 17px;
+    font-weight:lighter;
+}
+a span{
+    margin-right: 22px;
+}
+.sidebar hr{
+    border: 0;
+    height: 0.5px;
+    background-color: #ccc;
+    width: 95%;
+}
+.lower h3{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.lower img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 22px;
+}
+.small-sidebar{
+    width: 5%;
+}
+.small-sidebar p{
+    display: none;
+}
+.small-sidebar h3{
+    display: none;
+}
+.small-sidebar hr{
+    width: 60%;
+}
+/* Main */
+.main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 18%;
+    padding-right: 2%;
+    padding-bottom: 20px;
+}
+.large-container{
+    padding-left: 7%;
+}
+.tags{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 56px;
+    padding-top: 6px;
+    background-color: white;
+    position: fixed;
+}
+.topics{
+    box-sizing: content-box;
+    height: 22px;
+    font-size: 16px;
+    padding: 3px 9px;
+    background-color: #eeeeee;
+    border-radius: 6px;
+    align-items: center;
+}
+.large-tags{
+    width: 100%;
+    gap: 15px;
+}
+.topics:hover{
+    background-color: #e7e4e4;
+}
+.list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 65px;
+}
+.vid-list .thumbnail{
+    width: 100%;
+    border-radius: 5%;
+}
+.vid-list .flex-div{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 7px;
+}
+.vid-list .flex-div img{
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.vid-info{
+    color: #5a5a5a;
+    font-size: 13px;
+}
+.vid-info a{
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width:900px) {
+    .menu{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main, .large-container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .right .icon{
+        display: none;
+    }
+    .right .img{
+        display: block;
+        width: 30px;
+    }
+    .middle .searchbox input{
+        width: 100px;
+    }
+    .middle .mic{
+        display: none;
+    }
+    .left img{
+        width: 80px;
+    }
+}
